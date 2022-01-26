@@ -12,7 +12,10 @@ Suite Teardown      Finish TestCase
 *** Test Cases ***
 Buy Product Test
     Set Browser Implicit Wait    10s
-    Successful Login    mortezayazdani306@gmail.com    ${correct_password}
+    Successful Login
+    Go to Cart
+    Remove Product
+    Remove Title Check
 
 
 *** Keywords ***
