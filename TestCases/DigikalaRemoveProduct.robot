@@ -6,9 +6,6 @@ Resource  ../Resources/Common.robot
 Suite Setup         Start TestCase
 Suite Teardown      Finish TestCase
 
-
-*** Variables ***
-
 *** Test Cases ***
 Buy Product Test
     Set Browser Implicit Wait    10s
