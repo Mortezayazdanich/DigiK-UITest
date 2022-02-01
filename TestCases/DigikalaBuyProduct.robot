@@ -6,10 +6,10 @@ Suite Setup         Run Keywords    Start TestCase
 ...                 Successful Login
 Suite Teardown      Finish TestCase
 
-
+Default Tags  Buy Product
 *** Test Cases ***
 Buy Product Test
-    Set Browser Implicit Wait    10s
+    [Documentation]     A simple test that adds a phone into cart
     Hover on Categories
     Select a Category
     Select The Seller
