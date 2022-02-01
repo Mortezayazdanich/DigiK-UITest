@@ -35,4 +35,3 @@ Switch Tabs
 Implicit Wait
     [Arguments]      ${seconds}
     Set Browser Implicit Wait    ${seconds}
-
