@@ -6,7 +6,7 @@ Resource    ../TestData/ConfigData.robot
 Start TestCase
     Open Browser  ${blankPage}   ${browser}
     Maximize Browser Window
-    Sleep    2s
+    Set Selenium Speed    0.5s
 
 Finish TestCase
     Close Browser
@@ -31,4 +31,8 @@ Switch Tabs
     @{handles}=  Get Window Handles
     Switch Window  ${handles}[${handle_number}]
     Log    ${handles}[${handle_number}]
+
+Implicit Wait
+    [Arguments]      ${seconds}
+    Set Browser Implicit Wait    ${seconds}
 
