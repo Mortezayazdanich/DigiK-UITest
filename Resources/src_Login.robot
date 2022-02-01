@@ -6,6 +6,7 @@ Resource  ../Resources/Common.robot
 *** Keywords ***
 Verify Login - Successful Login
     [Arguments]    ${username}  ${password}
+    [Documentation]  Successfully Login to digikala
     Go To   ${url}
     Click Element    ${btn_sign_up}
     Input Text   ${txtbox_username}  ${username}
@@ -17,6 +18,7 @@ Verify Login - Successful Login
 
 Verify Login Fails - Blank Username and Password
     [Arguments]    ${username}  ${password}
+    [Documentation]  Check how will digikala react to blank username
     Go To   ${url}
     Click Element    ${btn_sign_up}
     Input Text   ${txtbox_username}  ${username}
@@ -25,6 +27,7 @@ Verify Login Fails - Blank Username and Password
 
 Verify Login Fails - Invalid Username
     [Arguments]    ${username}  ${password}
+    [Documentation]  Check how will digikala react to an invalid username
     Go To   ${url}
     Click Element    ${btn_sign_up}
     Input Text   ${txtbox_username}  ${username}
@@ -33,6 +36,7 @@ Verify Login Fails - Invalid Username
 
 Verify Login Fails - Not Auth Username
     [Arguments]    ${username}  ${password}
+    [Documentation]  Check how will digikala react to a not authenticated username
     Go To   ${url}
     Click Element    ${btn_sign_up}
     Input Text   ${txtbox_username}  ${username}
@@ -41,6 +45,7 @@ Verify Login Fails - Not Auth Username
 
 Verify Login Fails - Wrong Password
     [Arguments]    ${username}  ${password}
+    [Documentation]  Check how will digikala react to a wrong password
     Go To   ${url}
     Click Element    ${btn_sign_up}
     Input Text   ${txtbox_username}  ${username}
