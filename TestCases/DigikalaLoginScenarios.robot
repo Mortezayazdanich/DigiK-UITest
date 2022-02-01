@@ -5,7 +5,7 @@ Resource  ../Resources/src_Login.robot
 Suite Setup         Start TestCase
 Suite Teardown      Finish TestCase
 
-
+Default Tags  Login Scenarios
 *** Test Cases ***                                                    USERNAME                             PASSWORD
 Login Scenarios
     Verify Login Fails - Blank Username and Password                  ${EMPTY}                             ${EMPTY}
